@@ -29,4 +29,5 @@ with open(os.getcwd()+"\\url.txt", "r",encoding='utf-8') as urls:
                     m3u8url='https://ccn.killcovid2021.com/m3u8/'+m3u8+'/'+m3u8+'.m3u8'
                     with open(os.getcwd()+"\\m3u8url.txt","a",encoding='utf-8') as f:
                         f.write(m3u8url+','+title)
-    print("所有视频下载地址获取完成，接下来可以把存在m3u8url.txt中的结果复制到M3U8Dwonloader中下载了")
+    print("所有视频下载地址获取完成，接下来开始下载")
+    os.system(os.getcwd()+'\\M3U8Downloader.exe')
