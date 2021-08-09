@@ -14,3 +14,8 @@ m3u8下载软件主要代码来自https://github.com/magicdmer/M3U8-Downloader �
 
 
 不用爬太多，后面的视频基本都失效了，目前的设置可以下载大约1100个左右。如果想下更多，可以去parse_list里修改第26行，比如改成 /video.php?category=long&page= 就是下载超过10分钟的视频还有其他关键字自己去网站里找了替换就行。
+
+
+文件结构参考
+![image](https://user-images.githubusercontent.com/18001712/128702481-1143a662-dd76-483b-9cd5-c6c423188254.png)
+下载器和脚本要在同一个文件夹里才能全自动下载，不支持设置下载路径，默认路径为当前文件夹下的Videos文件夹，这个文件夹会自动生成
