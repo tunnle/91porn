@@ -8,8 +8,7 @@ with open(os.getcwd()+"\\url.txt", "r",encoding='utf-8') as urls:
         print(url)
         cookies = requests.cookies.RequestsCookieJar()
         cookies.set("language", "cn_CN", domain=".p06.rocks", path="/")
-        randomIP = str(random.randint(0, 255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255))
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0',"Accept-Language":"zh-CN,zh;",'X-Forwarded-For': randomIP}
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0',"Accept-Language":"zh-CN,zh;","Cookie":"__utma=180893614.1833215134.1625158152.1625158152.1625158152.1; __utmz=180893614.1625158152.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); CLIPSHARE=k3uqgqgk1hptbkkiuvfvdadp84; covid=b829Gc%2FclO0g%2B6U2UpXTLT0fGMj8J2JHlvDdOX0i"}
         try:
             response=requests.get(url,headers=headers,timeout=15)
         except requests.exceptions.RequestException:

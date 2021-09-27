@@ -9,12 +9,12 @@ import os
 def parseList(url):
     m = common.visit(url)
     soup = BeautifulSoup(m,'html.parser')
-    urls = soup.find_all(name='a',attrs={"href":re.compile(r'^http(.*)view_video(.*)')})
-    for url  in urls:
+    for url in soup.findAll('a'):
         lst = url.get('href')
         with open(os.getcwd()+"\\url.txt","a") as f1:
-                print(lst+"\n")
-                f1.writelines(lst+"\n")
+                if lst.find('http://807.workgreat17.live/view_video.php?viewkey=')!=-1:
+                    print(lst)
+                    f1.writelines(lst+"\n")
 
 '''
     线程主方法
@@ -23,7 +23,7 @@ def enter(**kwargs):
     start = kwargs["start"]
     end = kwargs["end"]
     for page in range(start, end):
-        url = common.URL + "/video.php?category=rf&page=" + str(page)
+        url = common.URL + "/v.php?category=rf&viewtype=basic&page=" + str(page)
         try:
             print(threading.current_thread().name, " 解析 ", page, " 页 ", url)
             parseList(url)

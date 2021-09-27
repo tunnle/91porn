@@ -7,6 +7,9 @@ from requests.adapters import HTTPAdapter
 cookies = requests.cookies.RequestsCookieJar()
 cookies.set("language", "cn_CN", domain=".p06.rocks", path="/")
 
+
+cookie=""
+
 #--------------------------------------
 # 91 的临时站点，可以随时更换
 #URL = "http://91porn.com/"
@@ -55,10 +58,8 @@ def getTime():
    构造随机ip作为请求头访问目标站点
 '''
 def visit(url):
-    randomIP = str(random.randint(0, 255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255))
     retries = Retry(total=5,backoff_factor=10, status_forcelist=[500,502,503,504])
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0',"Accept-Language":"zh-CN,zh;",
-        'X-Forwarded-For': randomIP}
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:53.0) Gecko/20100101 Firefox/53.0',"Accept-Language":"zh-CN,zh;","Cookie":cookie}
     s = requests.Session()
     s.mount('http://', HTTPAdapter(max_retries=retries))
     html = s.get(url, headers=headers, cookies=cookies, stream=True).content
