@@ -2,7 +2,10 @@
 91pron爬虫
 
 
-已修复地址解析问题，目前测试cookie为空也能解析，如果不行了自己编辑downloadm3u8的第6行和common的第11行把自己的cookie填进去试试
+已修复地址解析问题，需要先添加自己的cookie才能爬，经过测试cookie有效期挺长的理论上能抓的还是挺多，自己编辑downloadm3u8的第6行和common的第11行把自己的cookie填进去即可。
+
+
+
 
 爬虫部分代码主要来自https://github.com/jakehu/91porn 感谢jakehu
 m3u8下载软件主要代码来自https://github.com/magicdmer/M3U8-Downloader 感谢magicdmer
