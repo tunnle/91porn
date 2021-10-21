@@ -3,7 +3,7 @@ import random
 import os
 
 
-cookie="language=cn_CN; CLIPSHARE=uajpjvdk54im6dmho19ahf5ic5; 533988140=71ce4mAHFqWhAmPPUPR4bGyYwaI689zW4OABzZdl"
+cookie=""
 
 with open(os.getcwd()+"\\url.txt", "r",encoding='utf-8') as urls:
     for url in urls.readlines():
