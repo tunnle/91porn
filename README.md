@@ -2,6 +2,7 @@
 91pron爬虫
 
 自行通过pip install selenium安装所需的库。脚本基于chrome开发，电脑必须安装chrome浏览器并且需要自己下载正确的驱动，下载所需的驱动exe文件请访问http://chromedriver.storage.googleapis.com/index.html 下载好自己浏览器版本对应的驱动并放到脚本同一目录即可。如有问题请提出issues
+如果想实现完全自动化请参考common.py第35行简单修改即可，目前的设置需要手动输入一次自己想爬的页数
 
 
 
