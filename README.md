@@ -20,7 +20,7 @@ m3u8下载软件主要代码来自https://github.com/magicdmer/M3U8-Downloader �
 不用爬太多，后面的视频基本都失效了。
 
 
-文件结构参考
-![image](https://user-images.githubusercontent.com/18001712/128702481-1143a662-dd76-483b-9cd5-c6c423188254.png)
+文件结构参考（打叉的几个请无视）
+![Uploading image.png…]()
 
 下载器和脚本要在同一个文件夹里才能全自动下载，不支持设置下载路径，默认路径为当前文件夹下的Videos文件夹，这个文件夹会自动生成
