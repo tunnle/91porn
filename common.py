@@ -32,7 +32,7 @@ import os
 def getNumber():
     r = 0
     while True:
-        num = 1
+        num = input('请输入要爬取页数：')  #如果想完全自动化，可以把这里改成num=10，这样每次默认爬10页，当然也可以改成其他自己想要的数字，建议不要太大。
         try:
             r = int(num)
             break
