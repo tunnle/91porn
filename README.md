@@ -1,9 +1,7 @@
 # 91porn
 91pron爬虫
 
-
-已修复地址解析问题，需要先添加自己的cookie才能爬。经过测试cookie有效期不会很短，理论上能爬的不少，只需要自己编辑downloadm3u8的第6行和common的第11行把自己的cookie填进去就可以了。
-
+自行通过pip install selenium安装所需的库。脚本基于chrome开发，电脑必须安装chrome浏览器并且需要自己下载正确的驱动，下载所需的驱动exe文件请访问http://chromedriver.storage.googleapis.com/index.html 下载好自己浏览器版本对应的驱动并放到脚本同一目录即可。如有问题请提出issues
 
 
 
