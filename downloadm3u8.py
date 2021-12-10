@@ -27,7 +27,7 @@ with open(os.getcwd()+"\\url.txt", "r",encoding='utf-8') as urls:
                     pass
                 else:
                     m3u8=line.replace('<div id=VID style="display:none;">','').replace('</div>','').replace(" ","").replace('\t','').strip()
-                    m3u8url='https://ccn.killcovid2021.com/m3u8/'+m3u8+'/'+m3u8+'.m3u8'
+                    m3u8url='https://la.killcovid2021.com//m3u8/'+m3u8+'/'+m3u8+'.m3u8'
                     with open(os.getcwd()+"\\m3u8url.txt","a",encoding='utf-8') as f:
                         f.write(m3u8url+','+title)
         with open(os.getcwd()+"\\temp.txt","w",encoding='utf-8') as f:
