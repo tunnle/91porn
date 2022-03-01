@@ -14,10 +14,7 @@ with open(os.getcwd() + '\cookies.txt', 'r', encoding='utf-8') as f:
 #URL = "http://91.91p17.space/"
 #URL = "https://p06.rocks"
 # 用HTTP协议
-URL = "http://807.workgreat17.live/"
-KEY = "91"
-KEY_SRC = "91_src" # 每个视频源url对于的redis key
-KEY_NONE = "91_none"
+URL = "http://91porn.com/"
 #----------------------------------------
 import os
 
@@ -48,7 +45,7 @@ def visit(url):
         'Cookie':cookie,
         'Host':'807.workgreat17.live',
         'Upgrade-Insecure-Requests':'1',
-        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.43'
+        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'
         }
     s = requests.Session()
     s.mount('http://', HTTPAdapter(max_retries=retries))
